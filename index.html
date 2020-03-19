@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+    <head>
+        <script type="text/javascript">
+            /*  const arr = [1, 2];
+            console.log(arr);
+            // [ 1, 2 ]
+            arr.length = 5; // set array length to 5 while currently 2.
+            console.log(arr);
+            // [ 1, 2, <3 empty items> ]
+            arr.forEach(element => console.log(element));   //  o/p: 1, 2   */
+
+            /*  var arr = [1, 2, 3, 4, 5];
+            var length = arr.length; console.log(length);
+            for(var i = 0; i < length; i++) {
+                arr[i] = arr[i]*2;
+            }
+            console.log(arr);   */
+
+            /*  var numbers = [1, 2, 3, 4, 5];
+            if(numbers.length > 3) {
+                numbers.length = 3;
+            }
+            document.write('Array elements : ' + numbers + '<br />Current Array Length : ' + numbers.length);   */
+
+            // Create an empty array of fixed length
+            /*  var emptyArray = [];
+            emptyArray.legnth = 3;
+            document.write('Empty Array : ' + emptyArray + '<br /> Array length : ' + emptyArray.length);
+            console.log('Empty Array : ' + emptyArray + '- Array length : ' + emptyArray.length);   */
+
+            // Return Statement
+            /*  function concatenation(firstName, lastName) {
+                var fullName; fullName = firstName + ' ' + lastName;
+                return fullName;
+            }
+            function getReturnValue() {
+                var result; result = concatenation('Souravi', 'Shetty');
+                document.write('The full Name is : ', result);
+            }   */
+
+            /*  var heroes = [
+                { name: "Batman", franchise: "DC" },
+                { name: "Ironman", franchise: "Marvel" },
+                { name: "Thor", franchise: "Marvel" },
+                { name: "Superman", franchise: "DC" }
+            ];
+            var marvelHeroes = heroes.filter(function(hero) {
+                return hero.name == "Ironman";
+            });
+            console.log(marvelHeroes);  */
+
+            /*  var Output = (function(x)
+            {
+                delete x;
+                return x;
+            })(2);
+            console.log(Output);    */
+
+            /*  var X = { Foo : 1}; 
+            var Output = (function() 
+            {   
+                delete X.Foo;
+                return X.Foo;
+            } 
+            )(); 
+            console.log(Output);    */
+
+            /*  var Employee = {
+                company: 'xyz'
+            }
+            var Emp1 = Object.create(Employee);
+            delete Emp1.company;
+            console.log(Emp1.company);  */
+
+            //nfe (named function expression)
+            /*  var Foo = Function Bar() {
+                return 7;
+            };
+            console.log(typeof Bar());  */
+        </script>
+        <style type="text/css">div, p, a { padding: 15px 30px; display: block; border: 2px solid #000; background: #fff; } .square { width: 50px; height: 50px; border: 1px solid black; display: inline-flex; justify-content: center; align-items: center; margin: 10px 5px; /* 10px between elements */ } .circle { background-color: green; border-radius: 50%; width: 10px; height: 10px; display: block; margin: auto; } </style>
+    </head>
+    <body>
+        <!-- <div id="wrap">DIV
+            <p class="hint">P
+                <a href="#">A</a>
+            </p>
+        </div> -->
+
+        <script type="text/javascript">        
+            /*  'use strict';
+            document.body.sayTagName = function() {
+                alert(this.tagName);
+            };
+            document.body.sayTagName(); */
+
+            /*  document.body.myData = {
+                name: 'Caesar',
+                title: 'Imperator'
+            };
+            alert(document.body.myData.title);  */
+
+
+            //Event Bubbling is process in which the event handlers are called when one event is nested inside another event.
+            /*  function showTagName() {
+                alert("Capturing: "+ this.tagName);
+            }    
+            var elms = document.querySelectorAll("div, p, a");
+            for(let elm of elms) {
+                elm.addEventListener("click", showTagName, true);
+            }   */
+
+            /*  var salary = "1000$";
+            (function () {
+                console.log("Original salary was " + salary);
+                var salary = "5000$";
+                console.log("My New Salary " + salary);
+            })();   */
+
+            /*  var multiplesof3 = "Fizz", multiplesof5 = "Buzz", multiplesof3and5 = "FizzBuzz";
+            for(var i=1; i<=100; i++) {
+                let str = '';
+                if(i%3 == 0) {
+                    document.write(i + ' ' + "Multiples of 3 : " + str + multiplesof3 + "<br />");
+                }
+                
+                else if(i%5 == 0) {
+                    document.write(i + ' ' + "Multiples of 5 : " + str + multiplesof5 + "<br />");
+                }
+
+                if(i%3 == 0 && i%5 == 0) {
+                    document.write(i + ' ' + "Multiples of Both 3 and 5 : " + str + multiplesof3and5 +"<br />");
+                }
+            }   */
+
+            /*  var gcd = function(a, b) {
+                if(!b) {
+                    return a;
+                }
+                return gcd(b, a % b);
+            };
+            document.write(gcd(2160, 5120));    */
+
+            /*  let nums = [1, 5, 5, 7];
+            console.log([new Set(nums)]);   */
+
+            /*  let x = function() {
+                return 
+                {
+                    message: 'Hi'
+                }
+            };
+            console.log(x());   */
+
+            /*  let profile = {
+                name: "start"
+            }
+            Object.seal(profile);
+            // Object.freeze(profile);
+            profile.name = 'Sunil';
+            profile.age = 15;
+            console.log(profile); */
+
+            /*  var add = function (x, y) { return x + y };
+            console.log(add(2, 3)); */
+
+            /*  function func(x) {
+                console.log(typeof x, arguments.length);
+            }
+            func();
+            func(7);
+            func('Souravi', 'Sunil');   */
+
+            /*  let People = function(person, age) {
+                this.person = person,
+                this.age = age,
+                this.info = function() {
+                    document.write(this);
+                    console.log(this);
+                    setTimeout(() => {
+                        document.write(this.person + " is " + this.age + " years old");
+                    }, 5000);
+                }
+            }
+            let person1 = new People('John', 39);
+            person1.info();   */
+        </script>
+
+        <!--Call Method
+        <div id="demo"></div> -->
+        <script type="text/javascript">
+            /*  var person = {
+                fullName: function() {
+                    return this.firstName + " " + this.lastName;
+                }
+            }
+            var person1 = {
+                firstName: "John",
+                lastName: "Doe"
+            }
+            var x = person.fullName.apply(person1);
+            document.getElementById("demo").innerHTML = x; */
+        </script>
+        <!-- <input type="button" onclick="getReturnValue()" value="Load a Return Value" /> -->
+        <!-- <div class="square">
+            <div class="circle"></div>
+        </div>
+        <div class="square">
+            <div class="circle"></div>
+        </div>
+        <div class="square">
+            <div class="circle"></div>
+        </div> -->
+
+        <!-- Apply Method
+        <div id="demo"></div> -->
+        <script type="text/javascript">
+            /*  var person = {
+                fullName: function(city, country) {
+                    return this.fistName + " " + this.lastName + " from city " + city + " country " + country;
+                }
+            }
+            var person1 = {
+                fistName: "John",
+                lastName: "Doe"
+            }
+            var x = person.fullName.apply(person1, ['Bangalore', 'Karantak']);
+            document.getElementById("demo").innerHTML = x;  */
+
+            /*  var enteredNum = [1, 2, 3, 4, 5];
+            var numbers = enteredNum.length;
+            var sum = numbers*(numbers+1)/2;
+            document.write("The sum of array is : " + sum); */
+
+            //Closure
+            /*  function create() {
+                var count = 0;
+                return {
+                    increment: function() {
+                        count++;
+                        console.log(count);
+                    },
+                    print: function() {
+                        console.log(count);
+                    }
+                }
+            }
+            var c = create();
+            c.increment();
+            c.print();  */
+
+            /*  var Employee = { name: 'xyz' };
+            var Empl = Object.create(Employee);
+            console.log(Empl.name);
+            delete Empl.name;
+            console.log(Empl.name); */
+
+            /*  var a = ['sunil', 'souravi', 'chaithra', 'souravi', 'codeswork', 'chaithra'];
+            var b = [];
+            let len = a.length;
+            for(let i = 0; i < len; i++) {
+                console.log(b.indexOf(a[i]) === -1)
+                if(b.indexOf(a[i]) === -1) {
+                    b.push(a[i]);
+                }
+            }
+                    console.log(b); */
+
+            /*  var numbers2 = [1, 12, 2 ,23,77,7,33,5,99,234];
+            numbers2.sort();
+            console.log(numbers2);  */
+
+            /*  var animals = [
+                { name: "Jason", species:"rabbit"},
+                { name: "Jessica", species:"dog"},
+                { name: "Jacky", species:"owl"},
+                { name: "Luke", species:"fish"},
+                { name: "Junior", species:"rat"},
+                { name: "Thomas", species:"cat"}
+            ];
+
+            var dogs = animals.filter(function(animals) {
+                return animals.species === "dog";
+            });
+            console.log(dogs);
+
+            var types = animals.map(function(animals) {
+                return animals.species;
+            });
+            console.log(types); */
+
+            /*  (function findsub() {
+                var mainString = "Hello World...!";
+                var subString = mainString.substring(1, 5);
+                console.log(subString);
+            }());   */
+
+            var userString; var reverseString = "";
+            userString = prompt("Please enter your string");
+
+            function reverse1(userString) {
+                var userStrlen = userString.length;
+                console.log(userStrlen);
+                for(let i = userStrlen; i >= 0; i--) {
+                    reverseString = reverseString + userString.charAt(i);
+                    console.log(reverseString);
+                }
+                document.write("The reversed String is " + reverseString);
+                return reverseString;
+            }
+
+            reverse1(userString);
+            var x = 10;
+            console.log(x);
+            var x;
+            console.log(x);
+            var x = 20;
+            console.log(x);
+
+        </script>
+
+    </body>
+</html>

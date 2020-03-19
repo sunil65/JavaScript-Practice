@@ -1,0 +1,342 @@
+<html>
+    <head id="myHead">
+        <script type="text/javascript">
+            /*  function reverse1(str) {
+                var r = "";
+                for(var i = str.length - 1; i >= 0; i--) {
+                    r = r + str.charAt(i);
+                console.log(r);
+                }
+                return r;
+            }
+            str = reverse1("Hello");
+            console.log(str);   */
+
+            //  Swap Numbers
+            // function swapnumber() {
+            //     var x=10; y=5;
+            //     var z;
+            //     z = x + y;
+            //     y = z - y;
+            //     x = z - x;
+            //     console.log(x);
+            //     document.write("Swapped Number is: x=" + x + " y=" + y);
+            // }
+            // swapnumber();
+
+            // fibonacci series
+            /*  var f=0; var s=1; var next;
+            var seriesNum = prompt("Please enter the number:", 0);
+            document.write("First Number: " + f + "<br />");
+            document.write("Second Number: " + s + "<br />");
+            for(var i=0; i<seriesNum; i++) {
+                next = f + s;
+                console.log("The next variable : " +next);
+                f = s;
+                console.log("The f variable : " +f);
+                s = next;
+                console.log("The s variable : " +s);
+                document.write("The series num: " + next + "<br />");
+            }   */
+
+            // The number is palindrome or not
+             /*   function palindrome() {
+                    revString = "";
+                    inputString = document.getElementById("text").value;
+                    i = inputString.length;
+                    console.log(i);
+                    for(var j = i; j >= 0; j--) {
+                        revString = revString + inputString.charAt(j);
+                        console.log(revString);
+                        document.write(revString + " <br />");
+                    }
+                    if(inputString === revString) {
+                        document.write(inputString + "  a Palindrome.");
+                    } else {
+                        document.write(inputString + " is not a Palindrome.");
+                    }
+                }*/
+
+            // Convert decimal to Binary
+            // var input = prompt("Enter a number");
+            // document.write("The decimal number is : " + input + "<br />");
+            // document.write("The binary number is : " + Number.parseInt(input, 2) + "<br />");
+            // document.write("The octal number is : " + Number.parseInt(input, 8) + "<br />");
+            // document.write("The hexadecimal number is : " + Number.parseInt(input, 16) + "<br />");
+            
+            // var input = Number(prompt("Enter a decimal number"));
+            // document.write("The decimal number is : " + input + "<br />");
+            // document.write("The binary number is : " + input.toString(2) + "<br />");
+            // document.write("The octal number is : " + input.toString(8) + "<br />");
+            // document.write("The hexadecimal number is : " + input.toString(16) + "<br />");
+
+            // Variable Hoisting
+            // var a = 10;
+            // document.write(a + ' ' + b + "<br />");
+            // var b = 20;
+            // document.write(a + ' ' + b);
+
+            // Prototype
+            // var Pens = function (pencolors) {
+            //     //instance object
+            //     this.type = pencolors;
+            //     this.price = 10;
+            // }
+            // var blackpen = new Pens('Black');
+            // var bluepen = new Pens('Blue');
+            // console.log(blackpen._proto_);
+            // //prototype object
+            // Pens.prototype.colors = 'Blook';
+            // document.write(blackpen.colors);
+            // console.log(Pens);
+
+            /*  It is Multline line comment.
+            It is second line for the comment   */
+
+            // Local Variable
+            /*  function myFunction() {
+                var x = 10;
+                console.log('Local to function: ' + x);
+            }
+            // console.log('Accessiing the local variable globally: ' + x);
+            window.onload = myFunction; */
+
+            //  Global Variable
+            /*var data = 200;
+            function a() {
+                document.write(data + "<br />");
+            }
+            function b() {
+                document.write(data);
+            }
+            a(); b();*/
+
+            // Undefined Variable
+            /*  function abc() {
+                var a;
+                document.write(a);
+            }
+            abc();*/
+
+            //Arithmetic operators
+            /*  var a = 20, b = 10, result;
+            var c = "test", linebreak = "<br />";
+            result = a + b;
+            document.write("a + b = " + result + linebreak);
+            document.write("a + b =");
+            document.write(result + linebreak);
+            result = a - b;
+            document.write("a - b = " + result + linebreak);
+            result = a * b;
+            document.write("a * b = " + result + linebreak);
+            result = a / b;
+            document.write("a / b = " + result + linebreak);
+            result = a % b;
+            document.write("a % b = " + result + linebreak);
+            result = a++;
+            document.write("a + + = " + result + linebreak); */Number
+
+            // Comparison Operators 
+            /*  var a = 20, b = 10, d = 20, result;
+            var c = "test", linebreak = "<br />";
+            result = (a == b);
+            document.write("Comparison is : " + result + linebreak);
+            result = (a == d);
+            document.write("Comparison is : " + result + linebreak);
+            result = (a === c);
+            document.write("Comparison with string is : " + result + linebreak);
+            result = (a === d);
+            document.write("Comparison is : " + result + linebreak);
+            result = (a === b);
+            document.write("Comparison with same datatype but different value is : " + result + linebreak);
+            result = (a > b);
+            document.write("Comparison if a is greater then b : " + result + linebreak);
+            result = (a < b);
+            document.write("Comparison if a is less then b : " + result + linebreak);
+            result = (a >= b);
+            document.write("Comparison if a is greater then or equal to b : " + result + linebreak);
+            result = (a <= b);
+            document.write("Comparison if a is less then or equal to b : " + result + linebreak);   */
+
+            // Logical Operators
+            /*  var a = true, b = false, c = true, result;
+            var linebreak = "<br />";
+            result = (a && b);
+            document.write("Logical operator && between (a && b) is : " + result + linebreak);
+            result = (a && c);
+            document.write("Logical operator && between (a && c) is : " + result + linebreak);
+            result = (a || b);
+            document.write("Logical operator || between (a || b) is : " + result + linebreak);
+            result = (a != b);
+            document.write("Logical operator != between (a != b) is : " + result + linebreak);
+            result = (a != c);
+            document.write("Logical operator != between (a != c) is : " + result + linebreak);  */Boolean
+
+            // Type of Operator
+            /*  var a = 43, b = 10, c = 'Sunil', result, linebreak = "<br />";
+            document.write(typeof(c) + linebreak);
+            result = (typeof(c) == 'string' ? "c is string" : "c is number" + linebreak );
+            document.write(result); */
+
+            // Console
+            /*  console.time("track");
+            console.log("test");
+            arraytable = [10, 20, 30] 
+            console.table(arraytable);
+            console.error("This is console error");
+            console.warn("This is warning message");
+            console.timeEnd("track");    */
+
+            // var bar = null;
+            // console.log(typeof bar === "object");
+
+            // function myfunction(){
+            //     var a = b = 3;
+            //     document.write("Value of B: " +typeof b);
+            //     document.write("Value of A: " +typeof a);
+            // };
+            // myfunction();
+            // console.log("a defined? " + (typeof a !== 'undefined'));
+            // console.log("b defined? " + (typeof b !== 'undefined'));
+
+            // var myObject = {
+            //     foo: "bar",
+            //     func: function() {
+            //         var self = this;
+            //         console.log("outer func:  this.foo = " + this.foo);
+            //         console.log("outer func:  self.foo = " + self.foo);
+            //         (function() {
+            //             console.log("inner func:  this.foo = " + this.foo);
+            //             console.log("inner func:  self.foo = " + self.foo);
+            //         }());
+            //     }
+            // };
+            // myObject.func();
+
+            /* console.log(0.1 + 0.2);
+            console.log((0.1 + 0.2) == 0.3); */
+
+            /*  for (var i = 0; i < 5; i++) {
+                var btn = document.createElement('button');
+                btn.appendChild(document.createTextNode('Button ' + i));
+                btn.addEventListener('click', function(){ console.log(i); });
+                document.body.appendChild(btn);
+            }   */
+
+            // var d = {};
+            // a = ['zebra', 'horse'];
+            // a.forEach(function(k) {
+            //     d[k] = undefined;
+            //     console.log(d[k]);
+            // });
+
+            /*  var arr1 = "john".split('');
+            var arr2 = arr1.reverse();
+            var arr3 = "jones".split('');
+            arr2.push(arr3);
+            console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+            console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
+
+            o/p: 
+            (4) ["n", "h", "o", "j"]
+            (5) ["n", "h", "o", "j", Array(5)]
+            (5) ["n", "h", "o", "j", Array(5)]
+            array 1: length=5 last=h,o,j,j,o,n,e,s
+            array 2: length=5 last=j,o,n,e,s    */
+
+            // function reverseString(str) {
+            //     var newString = "";
+            //     for(let i=str.length - 1;i>=0; i--) {
+            //         newString = newString + str[i];
+            //         console.log(i);
+            //     }
+            //     return newString;
+            // }
+            // reverseString('Hello');
+
+            /*  var c = parseInt("123qwe");
+            var d = Number("123");
+            console.log(c + ' - ' + d); */
+
+        </script>
+
+        <title>My title</title>
+    </head>
+    <body>
+        <!-- <p id="consoleTest">This is test</p>
+        Enter any word: <input type="text" id="text" />
+        <input type="submit" value="check" onclick="palindrome()" /> -->
+        
+        <!-- <p>1</p>
+        <p>2</p>
+        <p>3</p> -->
+
+        <!-- <p id="Element">Head</p> -->
+
+        <p id="demo"></p>
+        <!-- <button onclick="myFunction()">Try it</button> -->
+        <script type="text/javascript">        
+          /*  function myFunction() 
+                {
+                    var x = document.getElementsByTagName("P").item(0);
+                    alert(x.innerHTML);
+                }   */
+
+            /*    function myFunction() 
+                {
+                    var x = document.getElementsByTagName("P").namedItem("Element");
+                    alert(x.innerHTML);
+                }
+                myFunction();   */
+
+            /*  function myFunction() 
+                {
+                    var x = document.getElementById("demo");
+                    console.log(x);
+                    console.log(x.innerHTML);
+                    console.log(typeof x.attributes[0].isId);
+                    x.innerHTML = x.attributes[0].isId;
+                }
+                myFunction();   */
+
+            /*    function myFunction() 
+                {
+                    var x = document.head.id;
+                    console.log(x);
+                    document.getElementById("demo").innerHTML = x;
+                    document.write(x);
+                }
+                myFunction();   */
+
+                /*  function myFunction() 
+                {
+                    document.getElementById("demo").innerHTML = Math.abs(-7.25);
+                }
+                myFunction();   */
+
+                /*  var a = 10;
+                do {
+                    a += 1;
+                    console.log(a);
+                } while (a < 5);    */
+
+                /*  var a = []; 
+                a.unshift(1); 
+                a.unshift(22);
+                console.log(a);
+                a.shift(); 
+                console.log('1 = ' + a);
+                a.unshift(3,[4,5]); 
+                console.log(a);
+                a.shift();
+                console.log(a);
+                a.shift();
+                console.log(a);
+                a.shift();
+                console.log(a); */
+
+                var a=225;
+                document.write(Math.sqrt(a));
+        </script>
+    </body>
+</html>

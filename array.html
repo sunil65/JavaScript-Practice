@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Merge Arrays</title>
+        <script type="text/javascript">
+        // console.log(Array.isArray([]));
+        // console.log(Array.isArray([1]));
+        // console.log(Array.isArray(new Array()));
+        // console.log(Array.isArray(new Array('a', 'b', 'c', 'd')));
+        // console.log(Array.isArray(Array.prototype));
+
+        // var x = 10;
+        // function test() {
+        //     console.log('value of x: ' + x);
+        //     x = 5;
+        // };
+        // test();
+
+        /* Map */
+        // let users = [
+        //     {id: 1, name: "John"},
+        //     {id: 2, name: "Janardhan"},
+        //     {id: 3, name: "Jahan"}
+        // ];
+
+        // let user = users.filter(function(filteredUsers) {
+        //     alert(filteredUsers.name == "Jahan");
+        //     return filteredUsers.name == "Jahan"
+        // });
+ 
+        // var arr = [2, 5, 6, 3, 8, 9];          
+        // var newArr = arr.map(function(val, index){ 
+        //     return {key:index, value:val*val}; 
+        // })           
+        // console.log(newArr);          
+        // console.log(JSON.stringify(newArr));
+
+        // function filterRangeInPlace(arr, a, b) {
+        //     for(let i=0; i<arr.length; i++) {
+        //         let val = arr[i];
+
+        //         if(val < a || val > b) {
+        //             arr.splice(i, 1);
+        //             i--;
+        //         }
+        //     }
+        // };
+        // let arr = [5, 3, 8, 1, 5, 3, 8];
+        // filterRangeInPlace(arr, 1, 4);
+        // alert(arr);
+
+        let recipeMap = new Map([
+            ['cucumber', 500],
+            ['tomatoes', 350],
+            ['onion',    50]
+        ]);
+        // iterate over keys (vegetables)
+        // for(let vegetable of recipeMap.keys()) {
+        //     alert(vegetable);
+        // }
+
+        // iterate over values (amounts)
+        // for(let amount of recipeMap.values()) {
+        //     alert(amount)
+        // }
+
+        // iterate over [key, value] entries
+        // for(let entry of recipeMap) {
+        //     alert(entry);
+        // }
+
+        // runs the function for each (key, value) pair
+        // recipeMap.forEach((value, key, map) => {
+        //     alert(`${key} : ${value}`);
+        // })
+
+        // let prices = Object.fromEntries([
+        //     ['banana', 1],
+        //     ['orange', 2],
+        //     ['meat', 4]
+        // ]);
+        // // now prices = { banana: 1, orange: 2, meat: 4 }
+        // alert(prices.orange);
+
+        // let map = new Map();
+        // map.set('banana', 1);
+        // map.set('orange', 2);
+        // map.set('meat', 4);
+
+        // let obj = Object.fromEntries(map.entries());
+        // alert(obj.orange);
+
+        // let set = new Set();
+        // let john = { name: "John" };
+        // let pete = { name: "Pete" };
+        // let mary = { name: "Mary" };
+        // set.add(john);
+        // set.add(pete);
+        // set.add(mary);
+        // set.add(john);
+        // set.add(mary);
+        // alert(set.size);
+        // for(let user of set) {
+        //     alert(user.name);
+        // }
+
+        // let set = new Set(["oranges", "apples", "bananas"]);
+
+        // for (let value of set) {
+        //     alert(value);
+        // }
+
+        // set.forEach((value, valueAgain, set) => {
+        //     alert(value);
+        // })
+        </script>
+        
+        <style>
+            #mycanvas{border:2px solid pink;}
+        </style>
+    </head>
+    <body>
+        <!-- <canvas id="mycanvas" width ="150" height="150"></canvas>
+        <svg width ="400" height="150">
+            <rect width="400" height="150" style="fill:rgb(200,220,255);stroke-width:10;stroke:rgb(0,0,0)" />
+        </svg> -->
+
+        <canvas id="c" width="300" height="300"></canvas>
+
+        <script>
+            var canvas = document.getElementById( "c" );
+            var drawing_context = canvas.getContext( "2d" );
+            drawing_context.fillStyle = "blue";
+            drawing_context.fillRect( 50, 50, 100, 100 );
+        </script>
+    </body>
+</html>

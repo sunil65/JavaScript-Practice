@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <script type="text/javascript">
+             // String
+            /*console.time("track1");
+            var x = "Hello";
+            document.write(x + "<br />");
+            document.write(typeof(x) + "<br />");
+            console.timeEnd("track1");
+            document.write("-------------------------------<br />"); */
+
+            // String as a Object
+            /*console.time("track2");
+            var y = new String("Hi this is Sunil Shetty.");
+            document.write(y + "<br />");
+            document.write(typeof y);
+            console.timeEnd("track2"); */
+
+            // Infinity
+            /*x = 10;
+            y = 0;
+            z = x / y;
+            document.write('Value of z : ' +z); */
+
+            // Number as Objects
+            /* x = 10; y = new Number(123);
+            document.write('Value of x : ' + x + "<br />");
+            document.write('type of x : ' + typeof x + "<br />");
+            document.write('Value of y : ' + y + "<br />");
+            document.write('type of y : ' + typeof y + "<br />");       */
+
+        </script>
+    </head>
+    <body>
+        <!-- <div id="arrElements"></div> -->
+        <!-- <div id="test"></div> -->
+        <script type="text/javascript">            
+            // Accessing Array Elements
+            /*  var arr = ["Sudhir", "Sunil", "Raghavendra", "Raghu"];
+            var last = arr[arr.length - 4];
+            // document.write("The value of arr is : " + arr );
+            document.getElementById('arrElements').innerHTML = arr.sort();
+            document.write(Array.isArray(arr)); */
+
+            //for loop in array            
+            /*  var Employees = ["Sudhir", "Sunil", "Raghavendra", "Raghu", "Archana"];
+            var eLen, text, i;
+            eLen = Employees.length;
+            text = "<ul>";
+            for(i = 0; i < eLen; i++) {
+                text+= "<li>" + Employees[i] + "</li>";
+            }
+            text += "</ul>";
+            document.getElementById("test").innerHTML = text;   */
+
+            // for-each
+            /* var Employees = ["Sudhir", "Sunil", "Raghavendra", "Raghu", "Rama"];
+            var text;
+            text = "<ul>";
+            Employees.forEach(myFun);
+            function myFun(value) {
+                text += "<li>" + value + "</li>";
+            }
+            text += "</ul>";
+            document.getElementById("test").innerHTML = text; */
+
+            // Push Method            
+            /* var Employees = ["Sudhir", "Sunil", "Raghavendra", "Raghu", "Rama"];
+             
+             var x = Employees.push('Souravi');
+             document.getElementById('test').innerHTML = Employees;
+             document.write("The value return by Array : " + x);    */
+
+             // Pop() Method
+            /*  var Employees = ["Sudhir", "Sunil", "Raghavendra", "Raghu", "Rama"];
+            var x = Employees.pop();
+             document.getElementById('test').innerHTML = Employees;
+             document.write("The value return by Array : " + x);    */
+
+             // Unshift() Method
+             /* var Employees = ["Sudhir", "Sunil", "Souravi", "Raghavendra", "Raghu", "Rama"];
+             var x = Employees.unshift("Chaitra");
+             document.getElementById('test').innerHTML = Employees;
+             document.write("The value return by Array : " + x);    */
+
+             // shift() Method
+            /*  var Employees = ["Sudhir", "Sunil", "Souravi", "Raghavendra", "Raghu", "Rama"];
+             var x = Employees.shift();
+             document.getElementById('test').innerHTML = Employees;
+             document.write("The value return by Array : " + x);    */
+
+            // Creating object by creating instance of object
+            /*  var emp = new Object();
+            emp.id = 100;
+            emp.firstName = "Sunil";
+            emp.lastName = "Shetty";
+            document.write(emp.id + " - " + emp.firstName + " - " + emp.lastName);  */
+
+            // Creating object by constructor method
+            /*function emp(id, firstName, salary) {
+                this.id = id;
+                this.firstName = firstName;
+                this.salary = salary;
+            }
+            e = new emp(101, "Sunil Shetty", 1500000);
+            document.write(e.id + " - " + e.firstName + " - " + e.salary);  */
+
+            //  Empty values
+            /*  var emp = "";
+            document.getElementById('test').innerHTML = emp;
+            document.write(typeof emp); */
+
+            /*  let dog = {
+                name: 'doggo',
+                sayName () {
+                    console.log(this.name)
+                }
+            }
+            let sayName = dog.sayName
+            dog.sayName();  */
+
+            /*  function reverseString(str) {
+                var newString = "";
+                for(let i = str.length - 1; i >= 0; i--) {
+                    newString = newString + str[i];
+                    console.log(newString);
+                    document.write("The reversed string is : " + newString + "<br />");
+                }
+                return newString;
+            }
+
+            reverseString('Souravi');   */
+            
+        </script>
+
+        <!-- <input type="text" id="text" />
+        <input type="submit" onclick="palindrome()" /> -->
+        <script type="text/javascript">
+        /*      function palindrome() {
+                reverseString = "";
+                inputString = document.getElementById('text').value;
+                console.log(inputString);
+                for(var i = inputString.length-1; i>=0; i--) {
+                    reverseString = reverseString + inputString[i];
+                    console.log(reverseString);
+                }
+                if(inputString == reverseString) {
+                    document.write(inputString + " is a palindrome");
+                } else {
+                    document.write(inputString + " is not a palindrome");
+                }
+            }   */
+
+            /*  var text = 'outside';
+            function logIt(){
+                console.log(text);
+                var text = 'inside';
+            };
+            logIt();    */
+        </script>
+
+        <!-- <button id="btn-0">Button 1!</button>
+        <button id="btn-1">Button 2!</button>
+        <button id="btn-2">Button 3!</button> -->
+
+        <script type="text/javascript">
+        /*  const prizes = ['A Unicorn!', 'A Hug!', 'Fresh Laundry!'];
+        for (var btnNum = 0; btnNum < prizes.length; btnNum++) {
+
+            // For each of our buttons, when the user clicks it...
+            document.getElementById(`btn-${btnNum}`).onclick = (frozenBtnNum => {
+            return () => {
+
+                // Tell her what she's won!
+                alert(prizes[frozenBtnNum]);
+            };
+            })(btnNum);
+        }   */
+
+        //Fibonacci Series
+        /*  var f = 0, s = 1, next;
+        var seriesNum = prompt("Enter the fib n number: ", 0);
+        for(var i = 0; i < seriesNum; i++) {
+            next = f + s;
+            f = s; s = next;
+            document.write("The series numbers is : " + next + "<br />" );
+        }   */
+
+        // array1 = [1, 2, 3];
+        // array2 = ['a', 'b', 'c', 'd', 'e', 'f'];
+        //  function merge(array1, array2) {
+        //     if (array1.length == array2.length) {
+        //         var c = [];
+        //         for (var i = 0; i < array1.length; i++) {
+        //             c.push([array1[i], array2[i]]);
+        //             console.log(c);
+        //         }
+        //         return c;
+        //             console.log(c);
+        //     }
+        //     return null;
+        //  }
+        
+
+        </script>
+    </body>
+</html>
